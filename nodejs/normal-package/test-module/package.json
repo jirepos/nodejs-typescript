@@ -1,0 +1,17 @@
+{
+  "name": "local-distribution-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node ./src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "bin-directory": "^1.0.1",
+    "jirepos-hello": "file:../publish-module"
+  }
+}

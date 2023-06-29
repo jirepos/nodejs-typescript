@@ -1,0 +1,9 @@
+{
+  "name": "@jirepos/hello",
+  "version": "1.0.0",
+  "description": "for testing",
+  "main": "src/index.js",
+  "author": "jirepos@gmail.com",
+  "license": "MIT",
+  "type": "module"
+}

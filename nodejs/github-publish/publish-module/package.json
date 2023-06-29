@@ -1,0 +1,13 @@
+{
+  "name": "@jirepos/hello",
+  "version": "1.0.1",
+  "description": "for testing",
+  "main": "src/index.js",
+  "author": "jirepos@gmail.com",
+  "license": "MIT",
+  "repository": "https://github.com/jirepos/nodejs-publish-hello.git",
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "type": "module"
+}
