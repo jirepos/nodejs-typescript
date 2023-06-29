@@ -5,22 +5,17 @@
     "module": "ESNext",
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "skipLibCheck": true,
-
-    /* .d.ts files */
-    /* .d.ts 파일 생성 여부 */ 
-    "declaration": true,
-    /* js 파일 허용 여부 */
-    "allowJs": true,
-    /* .d.ts 파일만 생성하고 .js 파일은 출력에서 제외 */
-    "emitDeclarationOnly": true,
-
+    "allowImportingTsExtensions": true,
+    
     /* Bundler mode */
     "moduleResolution": "bundler",
-    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "noEmit": true,, "node_modules/mylib/mylib.d.ts", "node_modules/mylib/mylib.js"
+    "noEmit": true,
 
+    "declaration": true,
+    
+    
     /* Linting */
     "strict": true,
     "noUnusedLocals": true,

@@ -2,7 +2,10 @@ import './style.css'
 import typescriptLogo from './typescript.svg'
 import viteLogo from '/vite.svg'
 import { setupCounter } from './counter.ts'
-import { hello } from 'mylib/mylib' 
+
+import { say } from './libs/common/util.ts'
+
+
 
 document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   <div>
@@ -22,7 +25,7 @@ document.querySelector<HTMLDivElement>('#app')!.innerHTML = `
   </div>
 `
 
-let res = hello();
-console.log(res);
+// say 사용
+console.log(say('Hello, world!'));
 
 setupCounter(document.querySelector<HTMLButtonElement>('#counter')!)
