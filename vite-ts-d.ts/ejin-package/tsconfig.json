@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    // import 문법 결정 
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    // TypeScript 4.7부터 Node.js의 ECMAScript 모듈 지원을 위한 'node16' 또는 'nodenext'
+    "moduleResolution": "bundler",
+    // .ts 확장자 허용 
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    // output 디렉토리에 생성하지 않음 
+    "noEmit": true,
+
+    "esModuleInterop": false,                            
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
+  },
+  // 컴파일 포함할 파일/디렉토리 패턴 
+  "include": ["src"]
+}

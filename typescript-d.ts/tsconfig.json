@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es2016",                            /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
+    "module": "ES6",                               /* Specify what module code is generated. */
+    // nodeext 또는 node16으로 설정된 경우
+    // 설정된 규칙이 package.json과 동일
+    // type 필드가 commonjs이면, .ts는 cjs로 해석
+    // type 필드가 module인 경우, .ts는 esm으로 해석
+    // .cts는 항상 cjs로 해석 
+    // .mts는 항상 esm으로 해석
+    "moduleResolution": "classic",                    /* Specify how TypeScript looks up a file from a given module specifier. */
+    "typeRoots": [
+       "./node_modules/@types",
+       "./@types"
+    ],
+    "outDir": "build",
+    "esModuleInterop": true,                             /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
+    "forceConsistentCasingInFileNames": true,            /* Ensure that casing is correct in imports. */
+    "strict": true,                                      /* Enable all strict type-checking options. */
+    // .d.ts 파일 자동 생성 
+    "declaration": true,  
+    // "noEmit": true, 
+    // ts-node를 사용하려면 임포트할 때 .ts 확장자를 붙여야 한다. 
+    // "allowImportingTsExtensions": true,
+
+    /* JavaScript Support */
+    "allowJs": true, /* javascript import 허용 */
+    // "checkJs": false,
+    "skipLibCheck": true                                 /* Skip type checking all .d.ts files. */
+   
+  },
+  // 컴파일 대상 파일, 우선 순위가 제일 높다. 
+  // files > exclude > include 순으로 우선 순위가 높다. 
+  // "files": [
+  //   "src/index.ts"
+  // ],
+  // 컴파일 포함할 파일/디렉토리 패턴 
+  "include": [
+    "src/**/*"
+    ,"@types/**/*"  
+  ],  
+}
