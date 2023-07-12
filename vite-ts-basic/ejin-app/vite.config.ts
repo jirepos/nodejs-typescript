@@ -21,6 +21,11 @@ import tsconfigPaths from "vite-tsconfig-paths";
 // 나는 나를 위해 잘 작동하는 TypeScript로 간단한 익스프레스 앱을 만들었습니다. 한 가지 단점은 플러그인이 상당히 새롭고 
 // 아직 초기 단계에 있으므로 심각한 프로덕션 앱에서 사용하고 싶지 않을 수 있다는 것입니다.
 // https://www.npmjs.com/package/vite-plugin-node
+
+
+// vite v4.3.9 building for production...
+// transforming (1) src\index.ts[plugin:vite:resolve] Module "path" has been externalized for browser compatibility, imported by "G:/dev/github/jirepos/nodejs-typescript/vite-ts-basic/ejin-app/src/common/node-path.ts". See http://vitejs.dev/guide/troubleshooting.html#module-externalized-for-browser-compatibility for more details.
+// ✓ 4 modules transformed.
 export default defineConfig({
   // resolve: {
   //   alias: [
