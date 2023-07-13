@@ -7,14 +7,12 @@
     "esModuleInterop": true,
     //  import 문에서 default를 사용할 수 있도록 설정합니다.
     "allowSyntheticDefaultImports": true,
-    "allowJs": true,
-
-    // override될 속성들 
-    "outDir": "build2",
-    "emitDeclarationOnly": true,
-    "declaration": true,  
+    "declaration": true,
+    "outDir": "build",
     // "allowImportingTsExtensions": true,
-
+    // "emitDeclarationOnly": true,
+    // "declaration": true,
+    "allowJs": true
   },
   "include": [
     "src/**/*"
