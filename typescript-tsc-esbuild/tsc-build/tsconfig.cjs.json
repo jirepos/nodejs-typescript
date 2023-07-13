@@ -1,0 +1,7 @@
+{
+  "extends": "./tsconfig.json", 
+  "compilerOptions": {
+    "module": "Node16",  // Node.js 환경용이면 CommonJS로 설정하지 않아야 함 
+    "outDir": "build/cjs",
+  }
+}

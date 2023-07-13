@@ -1,7 +1,0 @@
-{
-  "name": "ejin-app-test",
-  "type": "module",
-  "dependencies": {
-    "ejin-app": "file:../ejin-app"
-  }
-}

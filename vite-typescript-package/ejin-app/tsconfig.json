@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    // 타입스크립트 5.0 이상부터는 moduleResolution: bundler 라는 옵션을 선택할 수 있는데, 
+    // 이는 타입스크립트에게 코드가 다른 툴에 의해 번들링될 거라고 알려주고, 
+    // 이에 맞게 규칙을 완화해준다고 한다. 대신 모듈이 es2015 이상을 사용해야 한다. 
+    // moduleResolution은 컴파일러가 각 import가 어떤 모듈을 가리키는지 해석하는 과정을 의미
+    "moduleResolution": "Bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    // path
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["src/*"]
+    },
+  },
+  "include": ["src"]
+}

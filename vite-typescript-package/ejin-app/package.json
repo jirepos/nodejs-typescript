@@ -1,0 +1,30 @@
+{
+  "name": "ejin-app",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "main": "./build/ejin-app.umd.cjs",
+  "module": "./build/ejin-app.js",
+  "types": "./build/index.d.ts",
+  "bin": {
+    "ejin": "bin/ejin.js"
+  },
+  "exports": {
+    ".": {
+      "import": "./build/ejin-app.js",
+      "require": "./build/ejin-app.umd.cjs"
+    }
+  },
+  "scripts": {
+    "build": "tsc && vite build"
+  },
+  "devDependencies": {
+    "@types/node": "^20.3.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.2",
+    "vite": "^4.3.9",
+    "vite-plugin-dts": "^3.0.0-beta.3",
+    "vite-tsconfig-paths": "^4.2.0",
+    "vitest": "^0.32.2"
+  }
+}

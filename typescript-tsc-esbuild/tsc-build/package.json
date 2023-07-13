@@ -1,0 +1,31 @@
+{
+  "name": "ejin-build",
+  "version": "1.0.0",
+  "description": "CommonJS and ESM build",
+  "main": "./build/cjs/index.js",
+  "types": "./build/types/index.d.ts",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./build/types/lib.d.ts",
+      "require": "./build/cjs/lib.js",
+      "import": "./build/esm/lib.js",
+      "default": "./build/esm/lib.js"
+    }
+  },
+  "scripts": {
+    "build:version": "npm --version",
+    "compile": "tsc -b ./tsconfig.cjs.json ./tsconfig.esm.json ./tsconfig.types.json",
+    "build:clean": "rmdir /q /s build",
+    "build": "npm-run-all -s build:version build:clean compile",
+    "test": "node ./build/esm/index.js",
+    "build:basic": "tsc"
+  },
+  "author": "ejin@gmail.com",
+  "license": "ISC",
+  "devDependencies": {
+    "esbuild": "^0.18.11",
+    "npm-run-all": "^4.1.5",
+    "typescript": "^5.1.6"
+  }
+}

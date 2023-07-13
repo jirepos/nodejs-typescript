@@ -1,0 +1,11 @@
+{
+  "name": "ejin-app-test",
+  "type": "module",
+  "scripts": {
+    "test:install": "npm install ../ejin-app",
+    "test": "npm run test:install && node ./src/index.js"
+  },
+  "dependencies": {
+    "ejin-app": "file:../ejin-app"
+  }
+}
