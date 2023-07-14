@@ -37,6 +37,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
+    "moduleDetection": "force",
 
     "typeRoots": ["./node_modules/@types", "./@types"],
   },
