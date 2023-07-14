@@ -1,5 +1,13 @@
-import path from 'path'; 
+// node.js built-in 모듈 사용 
+import * as  path from 'path'; 
 
-export default function testPath() {
+// npm install @types/node
+// tsconfig.json
+// {
+//   "compilerOptions": {
+//     "typeRoots": ["./node_modules/@types"],
+//   },
+// }
+export function testPath() {
   console.log(path.join('a', 'b', 'c'));
 }

@@ -11,20 +11,33 @@
       "import": "./build/ejin-common.js",
       "require": "./build/ejin-common.umd.cjs"
     }
-  },  
+  },
   "files": [
     "build"
   ],
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "tsnode": "ts-node -r tsconfig-paths/register ./src/index.ts",
+    "start": "nodemon -e ts,js --exec ts-node -r tsconfig-paths/register ./src/index.ts"
   },
   "devDependencies": {
-    "@types/node": "^20.4.1",
+    "@types/node": "^20.4.2",
+    "nodemon": "^3.0.1",
+    "ts-node": "^10.9.1",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.2",
     "vite": "^4.4.0",
     "vite-plugin-dts": "^3.2.0",
     "vite-tsconfig-paths": "^4.2.0"
+  },
+  "dependencies": {
+    "ejin-node-jslib": "file:../ejin-node-jslib",
+    "ejin-node-nodec": "file:../ejin-node-nodec",
+    "hex-to-binary": "^1.0.1"
+  },
+  "ts-node": {
+    "esm": true
   }
 }
